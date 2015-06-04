@@ -1,18 +1,10 @@
 {
-  "name": "acorn",
-  "description": "ECMAScript parser",
-  "homepage": "https://github.com/marijnh/acorn",
-  "main": "dist/acorn.js",
-  "version": "2.0.3",
-  "engines": {
-    "node": ">=0.4.0"
-  },
+  "name": "acorn-jsx",
+  "description": "Alternative, faster React.js JSX parser",
+  "homepage": "https://github.com/RReverser/acorn-jsx",
+  "main": "acorn.js",
+  "version": "1.0.1",
   "maintainers": [
-    {
-      "name": "Marijn Haverbeke",
-      "email": "marijnh@gmail.com",
-      "web": "http://marijnhaverbeke.nl"
-    },
     {
       "name": "Ingvar Stepanyan",
       "email": "me@rreverser.com",
@@ -21,20 +13,22 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/marijnh/acorn.git"
+    "url": "https://github.com/RReverser/acorn-jsx"
   },
-  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/RReverser/acorn-jsx/master/LICENSE"
+    }
+  ],
   "scripts": {
-    "test": "node test/run.js",
-    "prepublish": "bin/prepublish.sh"
+    "test": "node test/run.js"
   },
-  "bin": {
-    "acorn": "./bin/acorn"
+  "dependencies": {
+    "acorn": "^1.0.3"
   },
   "devDependencies": {
-    "babelify": "^5.0.4",
-    "browserify": "^9.0.3",
-    "browserify-derequire": "^0.9.4",
-    "unicode-7.0.0": "~0.1.5"
+    "chai": "^2.2.0",
+    "mocha": "^2.2.4"
   }
 }
